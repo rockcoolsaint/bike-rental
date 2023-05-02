@@ -86,6 +86,9 @@ h6 {
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
 }
+.back-link {
+  margin: 10px 20px 20px;
+}
 /* end of globals */
 
 /* roomlist */
@@ -168,7 +171,7 @@ h6 {
 .img-container:hover .price-top {
   opacity: 0;
 }
-.img-container:hover .room-link {
+.img-container:hover .bike-link {
   transform: translate(-50%, -50%) scale(1);
 }
 .bike-info {
@@ -180,3 +183,78 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 /* end of room  */
+/* single room*/
+
+.single-bike {
+  padding: 5rem 0 0 0;
+}
+.single-bike-images {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+.single-bike-images img {
+  width: 100%;
+  display: block;
+}
+.single-bike-info {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem auto;
+}
+.desc,
+.info {
+  margin: 1rem 0;
+}
+.desc h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.desc p {
+  line-height: 1.5;
+}
+.info h3,
+.info h6 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.info h6 {
+  font-weight: 300;
+}
+.bike-extras {
+  width: 80vw;
+  margin: 0 auto 3rem auto;
+}
+.bike-extras h6 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.extras {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .single-bike-images,
+  .single-bike-info,
+  .bike-extras {
+    width: 95vw;
+    max-width: 1170px;
+  }
+  .single-bike-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+  .info {
+    padding-left: 3rem;
+  }
+}
+/* end of single room*/
